@@ -16,3 +16,12 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+# - task: GooglePlayRelease@4
+#   inputs:
+#     authType: 'JsonFile'
+#     serviceAccountKey: '$(Build.SourceDirectory)'
+#     applicationId: 'com.google.MyApp'
+#     action: 'SingleBundle'
+#     bundleFile: '$(Build.SourceDirectory)'
+#     track: 'internal'
